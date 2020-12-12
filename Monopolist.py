@@ -5,7 +5,7 @@ import time
 from random import randint
 
 import discord
-from monopolist_config import work_images
+from monopolist_config import work_images, token
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix = '.')
@@ -363,4 +363,4 @@ async def __казино(ctx, amount: int = None):
                     cursor.execute(f'UPDATE users SET cash = cash = 0 WHERE id = {ctx.author.id}')
                 connection.commit()
                 
-bot.run('NzY3MDkzMzQ1NzUwNjE0MDI2.X4s5WQ.YPO9nYexGvQjWVCjzjw-jSX-G7o')
+bot.run(token)
