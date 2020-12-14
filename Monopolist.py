@@ -5,7 +5,7 @@ import time
 from random import randint
 
 import discord
-from monopolist_config import work_images, token
+from monopolist_config import work_images, token #work_images - 291 строка, token - токен бота
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix = '.')
